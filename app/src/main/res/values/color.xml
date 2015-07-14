@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="oppo">#00925f</color>
+    <color name="select_oppo">#00c07d</color>
+    <color name="pass_oppo">#008053</color>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+
+    <color name="white_smoke">#f7f7f7</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#90FFFFFF</color>
+    <color name="main_color_green">#00b063</color>
+    <color name="main_color_gray_dk">#3b3b3b</color>
+    <color name="main_color_gray_lt">#acacac</color>
+    <color name="primary_text">#212121</color>
+    <color name="rcv_date_chat">#B6B6B6</color>
+    <color name="rcv_text_chat">#FFFFFF</color>
+    <color name="gray_light">#e8e8e8</color>
+
+</resources>

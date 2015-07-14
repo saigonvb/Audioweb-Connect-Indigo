@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_final"
+                tools:context="mx.com.audioweb.AW01.Citas.Encuesta">
+
+    <!-- Audioconferencia, Servicion Integrales, Licenciamiento, Otros -->
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_poll"
+            android:textColor="@android:color/white"
+            android:background="@drawable/custom_button"
+            android:id="@+id/buttonEnviar" android:layout_gravity="center_horizontal|bottom"
+            android:layout_alignParentBottom="true" android:layout_alignLeft="@+id/ratingBar"
+            android:layout_alignStart="@+id/ratingBar" android:layout_marginBottom="41dp"
+            android:layout_alignRight="@+id/ratingBar" android:layout_alignEnd="@+id/ratingBar"/>
+    <RatingBar
+            android:progressDrawable="@drawable/rating_stars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:layout_gravity="center"
+            android:layout_below="@+id/checkBox4" android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"/>
+
+
+    <CheckBox
+            android:layout_marginTop="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/audio_conferencia"
+            android:onClick="onCheckboxClicked"
+            android:id="@+id/checkBox"
+            android:layout_below="@+id/linearLayout" android:layout_centerHorizontal="true"/>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/servicios_integrales"
+            android:onClick="onCheckboxClicked"
+            android:id="@+id/checkBox2" android:layout_below="@+id/checkBox" android:layout_alignLeft="@+id/checkBox"
+            android:layout_alignStart="@+id/checkBox"/>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/licensing"
+            android:onClick="onCheckboxClicked"
+            android:id="@+id/checkBox3"
+            android:layout_toStartOf="@+id/textView2"
+            android:layout_toEndOf="@+id/checkBox2"
+            android:layout_below="@+id/checkBox2" android:layout_alignLeft="@+id/checkBox2"
+            android:layout_alignStart="@+id/checkBox2"/>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otros"
+            android:onClick="onCheckboxClicked"
+            android:id="@+id/checkBox4" android:layout_below="@+id/checkBox3" android:layout_alignLeft="@+id/checkBox3"
+            android:layout_alignStart="@+id/checkBox3"/>
+
+    <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" android:id="@+id/linearLayout">
+
+        <ScrollView
+                android:layout_gravity="center"
+                android:id="@+id/SCROLLER_ID"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="vertical"
+                android:fillViewport="true">
+
+            <EditText
+                    android:gravity="center"
+                    android:hint="@string/write_comment"
+                    android:shadowColor="@android:color/holo_red_dark"
+                    android:id="@+id/descripcion_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

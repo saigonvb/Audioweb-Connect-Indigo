@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llaa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/pad_10dp"
+        android:paddingRight="@dimen/pad_10dp"
+        android:background="@drawable/ic_chatbubble_other"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/pad_chat_item"
+        android:paddingTop="@dimen/pad_10dp"
+        >
+
+        <TextView
+            android:id="@+id/lbl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TextView"
+            android:textColor="@color/rcv_date_chat"
+            android:textSize="@dimen/txt_13sp"
+            />
+
+        <TextView
+            android:id="@+id/lbl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text"
+            android:textSize="@dimen/txt_14sp"
+            android:textColor="@color/rcv_text_chat"
+            android:maxLines="50"
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/lbl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/txt_14sp"
+        android:layout_marginLeft="@dimen/pad_20dp"
+        android:layout_alignRight="@+id/v1"
+
+        />
+
+</LinearLayout>

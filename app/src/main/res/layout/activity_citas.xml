@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_final"
+    tools:context="mx.com.audioweb.indigo.Citas.Citas">
+
+    <TextView
+            android:id="@+id/textviewLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="" />
+    <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/start_appointment"
+            android:id="@+id/cita"
+            android:textColor="@android:color/white"
+            android:background="@drawable/custom_button"
+            android:layout_below="@+id/switch1" android:layout_centerHorizontal="true" android:layout_marginTop="65dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/textViewtime"
+            android:layout_above="@+id/textviewLocation" android:layout_centerHorizontal="true"/>
+    <EditText
+            android:layout_width="200dp"
+            android:hint="@string/enterprise"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextEmpresa"
+            android:layout_above="@+id/textViewtime" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="77dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:hint="@string/contact"
+            android:id="@+id/editTextContacto"
+            android:layout_above="@+id/textViewtime" android:layout_alignLeft="@+id/editTextEmpresa"
+            android:layout_alignStart="@+id/editTextEmpresa" android:layout_alignRight="@+id/editTextEmpresa"
+            android:layout_alignEnd="@+id/editTextEmpresa"/>
+    <Switch
+            android:layout_marginTop="300dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1"
+            android:textOn="@string/presential"
+            android:textOff="@string/remote"
+            android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

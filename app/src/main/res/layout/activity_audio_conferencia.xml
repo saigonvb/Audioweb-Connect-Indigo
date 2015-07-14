@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_final"
+        >
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/join_meeting"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="78dp" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/access_code"
+            android:id="@+id/textView2"
+            android:layout_marginTop="56dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true" />
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/pinText"
+            android:layout_below="@+id/textView2" android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"/>
+
+    <Button
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="@string/start_conference_call"
+            android:textAlignment="center"
+            android:id="@+id/unirse_reunion"
+            android:textColor="@android:color/white"
+            android:background="@drawable/custom_button"
+            android:layout_marginBottom="63dp" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

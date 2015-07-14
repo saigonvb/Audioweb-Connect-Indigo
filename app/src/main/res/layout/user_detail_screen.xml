@@ -1,0 +1,220 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg_final" >
+
+    <Button
+            android:id="@+id/btnmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/view_map"
+            android:textColor="@android:color/white"
+            android:background="@drawable/custom_button"
+            android:layout_alignLeft="@+id/txtemail" android:layout_alignStart="@+id/txtemail"
+            android:layout_alignBottom="@+id/authenticateBtn"
+            android:layout_toStartOf="@+id/txtlargeemail" android:layout_toLeftOf="@+id/txtlargeemail"/>
+
+
+    <Button
+            android:id="@+id/authenticateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:text="@string/validation"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button"
+            android:layout_toRightOf="@+id/txtlargeuser" android:layout_toEndOf="@+id/txtlargeuser"/>
+
+    <TextView
+            android:id="@+id/txtuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="@string/user_id"
+            android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+            android:id="@+id/txtlargeuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txtuser"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="#000000" />
+
+    <View
+            android:id="@+id/userView"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txtlargeuser"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent" />
+
+    <TextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtuser"
+            android:layout_below="@id/userView"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="@string/name"
+            android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+            android:id="@+id/txtlargename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtlargeuser"
+            android:layout_below="@id/userView"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txtname"
+            android:padding="5dp"
+            android:text="@string/empty"
+            android:textColor="#000000" />
+
+    <View
+            android:id="@+id/nameView"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txtlargename"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent" />
+
+    <TextView
+            android:id="@+id/txttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtname"
+            android:layout_below="@id/nameView"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="@string/hour"
+            android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+            android:id="@+id/txtlargetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtlargeuser"
+            android:layout_below="@id/nameView"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txttime"
+            android:padding="5dp"
+            android:text="@string/empty"
+            android:textColor="#000" />
+
+    <View
+            android:id="@+id/timeView"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txtlargetime"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent" />
+
+    <TextView
+            android:id="@+id/txtloc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txttime"
+            android:layout_below="@id/timeView"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="@string/location"
+            android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+            android:id="@+id/txtlargeloc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtlargeuser"
+            android:layout_below="@id/timeView"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txtloc"
+            android:padding="5dp"
+            android:text="@string/empty"
+            android:textColor="#000" />
+
+    <View
+            android:id="@+id/locView"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txtlargeloc"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent" />
+
+    <TextView
+            android:id="@+id/txtphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtloc"
+            android:layout_below="@id/locView"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="@string/phone_number"
+            android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+            android:id="@+id/txtlargephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtlargeuser"
+            android:layout_below="@id/locView"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txtphone"
+            android:padding="5dp"
+            android:text="@string/empty"
+            android:textColor="#000" />
+
+    <View
+            android:id="@+id/phoneView"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txtlargephone"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent" />
+
+    <TextView
+            android:id="@+id/txtemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtloc"
+            android:layout_below="@id/phoneView"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="@string/mail"
+            android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+            android:id="@+id/txtlargeemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtlargeuser"
+            android:layout_below="@id/phoneView"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/txtemail"
+            android:padding="5dp"
+            android:text="@string/empty"
+            android:textColor="#000" />
+
+    <View
+            android:id="@+id/emailView"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txtlargeemail"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent" />
+
+</RelativeLayout>

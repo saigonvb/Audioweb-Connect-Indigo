@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Audioweb Connect</string>
+    <string name="about">Acerca de</string>
+    <string name="join_meeting">Unirse a Reunion</string>
+    <string name="access_code">Código de Acceso</string>
+    <string name="start_conference_call">Iniciar Audioconferencia</string>
+    <string name="message_hint">Introduzca un mensaje</string>
+    <string name="send">Enviar</string>
+    <string name="start_appointment">Iniciar Cita</string>
+    <string name="enterprise">Empresa</string>
+    <string name="contact">Contacto</string>
+    <string name="presential">Presencial</string>
+    <string name="remote">Remota</string>
+    <string name="active_appointments">Citas Activas</string>
+    <string name="appointment_list">Lista de Citas</string>
+    <string name="add_appointment">Agregar Cita</string>
+    <string name="send_poll">Enviar Encuesta</string>
+    <string name="write_comment">Escribe tu comentario</string>
+    <string name="loading_msj">Usted esta por visualizar una transmisión en vivo</string>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="get_location">Por favor valida tu ubicación</string>
+    <string name="validate">Validar</string>
+    <string name="active_notification">Notificaciones Activas</string>
+    <string name="view_map">Ver Mapa</string>
+    <string name="validation">Validación</string>
+    <string name="user_id">Id Usuario</string>
+    <string name="name">Nombre</string>
+    <string name="hour">Hora</string>
+    <string name="location">Ubicación</string>
+    <string name="phone_number">Teléfono</string>
+    <string name="mail">Correo</string>
+    <string name="appointments">Citas</string>
+    <string name="live">en vivo</string>
+    <string name="streaming">Transmisión</string>
+    <string name="notifications">Notificaciones</string>
+
+    <string name="action_settings">Ajustes</string>
+    <string name="title_activity_login">Login</string>
+    <string name="service_started">inicio el servicio</string>
+    <string name="tile_activity_timetracker">Time Tracker</string>
+    <string name="empty"> </string>
+    <string name="title_activity_sip__call_">Llamadas Sip</string>
+    <string name="title_activity_audio_conferencia">Audioconferencia</string>
+    <string name="title_activity_live_streaming">LiveStreaming</string>
+    <string name="title_activity_citas">Citas</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_encuesta">Comentarios de salida</string>
+    <string name="licensing">Licenciamiento</string>
+    <string name="servicios_integrales">Servicios Integrales</string>
+    <string name="audio_conferencia">Audioconferencia</string>
+    <string name="title_activity_citas_list">Citas Activas</string>
+    <string name="otros">Otros</string>
+    <string name="profile_me">My Profile Pic</string>
+    <string name="profile_other">Other profile pic</string>
+    <string name="title_activity_notification__list">Notificaciones</string>
+
+
+    <string name="TextView">TextView</string>
+    <string name="text">text</string>
+    <string name="err_fields_empty">Favor de LLenar los campos</string>
+    <string name="alert_wait">Porfavor Espere...</string>
+    <string name="err_login">Error Login</string>
+    <string name="err_singup">Error Registro</string>
+    <string name="type_msg">Escribe tu mensaje</string>
+    <string name="forgot_my_pwd">Olvide mi password</string>
+    <string name="my_chats">My Chats</string>
+    <string name="all_chats">Todos los Chats</string>
+    <string name="search">Search</string>
+    <string name="to">Para:</string>
+    <string name="edit">Edit</string>
+    <string name="new_chat">Nuevo Chat</string>
+    <string name="err_users">Error loading users</string>
+    <string name="alert_loading">Cargando...</string>
+    <string name="msg_no_user_found">No users found for chat!</string>
+    <string name="intent_data">intent_data</string>
+    <string name="parse_name_user">user_name</string>
+
+</resources>

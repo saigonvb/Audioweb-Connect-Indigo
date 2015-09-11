@@ -3,10 +3,10 @@
 
     <gradient
             android:angle="90"
-            android:endColor="@color/list_background_pressed"
-            android:startColor="@color/list_background_pressed" />
+            android:endColor="@color/list_background_pressed2"
+            android:startColor="@color/list_background_pressed2" />
     <stroke android:width="3dp"
-            android:color="@color/list_background_pressed" />
+            android:color="@color/list_background_pressed2" />
 
     <corners android:radius="5dp" />
 

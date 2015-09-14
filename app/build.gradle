@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "mx.com.audioweb.indigo"
+        applicationId "mx.com.audioweb.conferex"
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 19

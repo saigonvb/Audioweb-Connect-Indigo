@@ -43,7 +43,7 @@
     <string name="tile_activity_timetracker">Time Tracker</string>
     <string name="empty"> </string>
     <string name="title_activity_sip__call_">Llamadas Sip</string>
-    <string name="title_activity_audio_conferencia">Audioconferencia</string>
+    <string name="title_activity_audio_conferencia">Conferex Dialer</string>
     <string name="title_activity_live_streaming">LiveStreaming</string>
     <string name="title_activity_citas">Citas</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>

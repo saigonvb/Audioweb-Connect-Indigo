@@ -27,7 +27,7 @@ public class Sip_Call_Activity extends Activity implements View.OnClickListener 
     public SipProfile.Builder builder = null;
     public SipManager manager = null;
     public SipProfile me = null;
-    public Button button, button2, button3;
+    public Button button, button2, button3, botonGato, botonAsterisco, botonSeis;
     public SipAudioCall call = null;
     public IncomingCallReceiver callReceiver;
     public MyPhoneStateListener myListener;
@@ -48,9 +48,15 @@ public class Sip_Call_Activity extends Activity implements View.OnClickListener 
         button = (Button) findViewById(R.id.button);
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
+        botonGato = (Button) findViewById(R.id.botonGato);
+        botonAsterisco = (Button) findViewById(R.id.botonAsterisco);
+        botonSeis = (Button) findViewById(R.id.botonSeis);
         button.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
+        botonGato.setOnClickListener(this);
+        botonAsterisco.setOnClickListener(this);
+        botonSeis.setOnClickListener(this);
         chronometer = (Chronometer) findViewById(R.id.chronometer2);
         button.setVisibility(View.INVISIBLE);
         button3.setVisibility(View.INVISIBLE);
@@ -80,9 +86,9 @@ public class Sip_Call_Activity extends Activity implements View.OnClickListener 
             closeLocalProfile();
         }
 
-        String username = "9052";
+        String username = "AW203040";
         String domain = "189.201.130.153";
-        String password = "audi0web";
+        String password = "203040";
 
         if (username.length() == 0 || domain.length() == 0 || password.length() == 0) {
             showDialog(3);
@@ -179,9 +185,9 @@ public class Sip_Call_Activity extends Activity implements View.OnClickListener 
             };
 
 
-            Uri phoneCall = Uri.parse("sip:4600@189.201.130.153");
+            Uri phoneCall = Uri.parse("sip:4646@189.201.130.153");
             Log.e("NUMERO----->", phoneCall.toString());
-            call = manager.makeAudioCall(me.getUriString(), "sip:4600@189.201.130.153", listener, 30);
+            call = manager.makeAudioCall(me.getUriString(), "sip:4646@189.201.130.153", listener, 30);
 
             Log.e("CALL----->", String.valueOf(call));
             Log.e("CALL----->", call.toString());
@@ -267,7 +273,7 @@ public class Sip_Call_Activity extends Activity implements View.OnClickListener 
         switch (v.getId()) {
             case R.id.button:
 
-                /*mDrawerHandler.postDelayed(new Runnable() {
+                mDrawerHandler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         try {
@@ -290,7 +296,7 @@ public class Sip_Call_Activity extends Activity implements View.OnClickListener 
                             e.printStackTrace();
                         }
                     }
-                }, 600);*/
+                }, 600);
 
                 break;
             case R.id.button2:
@@ -319,6 +325,54 @@ public class Sip_Call_Activity extends Activity implements View.OnClickListener 
                         }
                     }
                 }, 600);
+
+            case R.id.botonGato:
+
+//event 0--9 maps to decimal value 0--9, '*' to 10, '#' to 11
+                mDrawerHandler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+
+                        call.sendDtmf(11);
+                        Log.i("botonGato", "Mando #");
+                        //finish();
+
+                    }
+                }, 600);
+
+
+            case R.id.botonAsterisco:
+
+//event 0--9 maps to decimal value 0--9, '*' to 10, '#' to 11
+                mDrawerHandler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+
+                            call.sendDtmf(10);
+                            Log.i("botonAsterisco", "Mando *");
+                            //finish();
+
+                    }
+                }, 600);
+
+
+
+            case R.id.botonSeis:
+
+//event 0--9 maps to decimal value 0--9, '*' to 10, '#' to 11
+                mDrawerHandler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+
+                        call.sendDtmf(+6);
+                        Log.i("botonSeis", "Mando 6");
+                        //finish();
+
+                    }
+                }, 600);
+
+
+
 
 
                 break;

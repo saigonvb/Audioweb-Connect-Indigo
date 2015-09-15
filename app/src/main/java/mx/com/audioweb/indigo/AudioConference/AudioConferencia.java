@@ -57,7 +57,7 @@ public class AudioConferencia extends Activity {
                                     //dialog.cancel();
                                     Intent callIntent = new Intent(Intent.ACTION_CALL);
                                     //callIntent.setData(Uri.parse("tel:018000832002" + PhoneNumberUtils.PAUSE + npin + "#"));
-                                    callIntent.setData(Uri.parse("tel:5528814600" + PhoneNumberUtils.PAUSE + CA.getText().toString() + "#" + PhoneNumberUtils.PAUSE + "#"));
+                                    callIntent.setData(Uri.parse("tel:5528814640" + PhoneNumberUtils.PAUSE + CA.getText().toString() + "#" + PhoneNumberUtils.PAUSE + "#"));
                                     startActivity(callIntent);
                                     Log.i("LLAMANDO ", callIntent.toString());
                                 }
@@ -70,7 +70,7 @@ public class AudioConferencia extends Activity {
                 } else {
                     Intent callIntent = new Intent(Intent.ACTION_CALL);
                     //callIntent.setData(Uri.parse("tel:018000832002" + PhoneNumberUtils.PAUSE + npin + "#"));
-                    callIntent.setData(Uri.parse("tel:5528814600" + PhoneNumberUtils.PAUSE + CA.getText().toString() + "#" + PhoneNumberUtils.PAUSE + "#"));
+                    callIntent.setData(Uri.parse("tel:5528814640" + PhoneNumberUtils.PAUSE + CA.getText().toString() + "#" + PhoneNumberUtils.PAUSE + "#"));
                     startActivity(callIntent);
                     Log.i("LLAMANDO ", callIntent.toString());
                 }
